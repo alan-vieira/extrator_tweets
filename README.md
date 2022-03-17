@@ -17,7 +17,7 @@ Extrator de dados do twitter para criação de massa de dados, para futuro trein
 
 ## Acesso ao projeto
 
-Você pode acessar o [código fonte do projeto](https://github.com/alan-vieira/preco_magic_card/blob/master/lista_magic_preco.py) ou [baixá-lo](https://github.com/alan-vieira/preco_magic_card/archive/refs/heads/master.zip).
+Você pode acessar o [código fonte do projeto](https://github.com/alan-vieira/extrator_tweets/blob/main/extrator_tweets.ipynb) ou [baixá-lo](https://github.com/alan-vieira/extrator_tweets/archive/refs/heads/main.zip).
 
 ## Abrir e rodar o projeto
 Após baixado, para o funcionamento correto da aplicação as seguintes dependêcias deverão ser instaladas.
