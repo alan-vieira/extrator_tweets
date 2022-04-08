@@ -49,6 +49,7 @@ tweets_df.to_csv('twitter_sentiments.csv')
 ## Ferramentas utilizadas
 - `Jupyter Notebook`
 - `Python`
+- `Mogodb`
 
 ## Acesso ao projeto
 
@@ -57,7 +58,14 @@ Você pode acessar o [código fonte do projeto](https://github.com/alan-vieira/e
 ## Abrir e rodar o projeto
 Após baixado, para o funcionamento correto da aplicação as seguintes dependêcias deverão ser instaladas.
 
-- `Pandas`
+- `pandas`
+- `json`
+- `tweepy`
+- `time`
+- `pymongo`
+- `bson`
+- `nltk`
+- `re`
 
 ## Autor
 
