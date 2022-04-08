@@ -11,6 +11,21 @@ Extrator de dados do twitter para criação de massa de dados, para futuro trein
 ## Aplicação
 
 <img src="./img/extrator_twitter.jpg" width="40%" height="40%">
+
+Após a conexão com a API do Twitter é enviada uma solicitação da lista dos tópicos mais citados (trending topics) da rede social. 
+
+Depois de ser reduzida de 50 tópicos para 10, criando assim um top10, uma nova solicitação a API é realizada, mas dessa vez pedindo os tweets relacionados a cada tópico da lista, formando assim uma massa de 200 tweets por tópico.
+
+Essa massa de dados crua é armazenada no Mongodb e posteriormente devolvida para o jupter notebook para limpeza e modificação, continuando assim o processo de ETL.
+
+As colunas que não são utilizadas são removidas e a coluna do texto sofre um tratamento de classificação e de rotulação, mas o resultado é salvo em uma nova coluna.
+
+A classificação do sentimento do texto é realizada com auxílio da biblioteca de processamento de linguagem natural Lea (desenvolvida pelo Rafael Almeida) que se trata de um fork da Vader, adaptada para o português. A escolha dessa biblioteca foi feita por ter um tratamento especial com tweets, reconhecendo os sentimentos dos emojis.
+
+A coluna que foi gerada com a limpeza dos dados, utilizando técnicas como remoção de stopword e de caracteres indesejados, foi criada para utilização no futuro treinamento de modelos de machine learnig, já que a classificação feita pela técnica do Lea não necessita desse tratamento.
+
+Depois de tudo realizando o resultado final é armazenado em um arquivo .csv.
+
                                                                                                             
 ## Ferramentas utilizadas
 - `Jupyter Notebook`
