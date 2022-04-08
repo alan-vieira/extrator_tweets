@@ -4,9 +4,9 @@ Extrator de dados do twitter para criação de massa de dados, para futuro trein
 
 ## Funcionalidades do projeto
 
-- `Funcionalidade 1`: 
-- `Funcionalidade 2`: 
-- `Funcionalidade 3`: 
+- `Funcionalidade 1`: Extrai, e exibe, o top10 dos tópicos mais citados no Twitter. 
+- `Funcionalidade 2`: Extrai uma massa de tweets com base no top10.
+- `Funcionalidade 3`: Efetua uma rotulação dos sentimentos nos tweets extraidos. 
 
 ## Aplicação
 
