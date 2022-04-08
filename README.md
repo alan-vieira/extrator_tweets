@@ -63,6 +63,7 @@ Após baixado, para o funcionamento correto da aplicação as seguintes dependê
 - `tweepy`
 - `time`
 - `pymongo`
+- `leia`
 - `bson`
 - `nltk`
 - `re`
