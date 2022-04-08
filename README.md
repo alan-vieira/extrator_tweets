@@ -10,6 +10,7 @@ Extrator de dados do twitter para criação de massa de dados, para futuro trein
 
 ## Aplicação
 
+![Fluxo do extrator do twitter](./img/extrator_twitter.jpg)
 
 ## Ferramentas utilizadas
 - `Jupyter Notebook`
