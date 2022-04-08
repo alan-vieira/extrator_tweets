@@ -68,7 +68,7 @@ Após baixado, para o funcionamento correto da aplicação as seguintes dependê
 - `nltk`
 - `re`
 
-Pra o funcionamenta da biblioteca LeIA (Léxico para Inferência Adaptada) deve inserida na pasta desse projeto a pasta lexicons juntamente com o arquivo leia.py, adiquiridos do repositório do [LeIA](https://github.com/rafjaa/LeIA).
+Pra o funcionamenta da biblioteca LeIA (Léxico para Inferência Adaptada) deve inserida na pasta desse projeto a pasta lexicons juntamente com o arquivo leia.py, adquiridos do repositório do [LeIA](https://github.com/rafjaa/LeIA).
 
 ## Autor
 
