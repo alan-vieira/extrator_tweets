@@ -27,7 +27,7 @@ query_search = trends_top10_list[i] + ' -filter:retweets'
 cursor_tweets = tw.Cursor(api.search, q=query_search, lang="pt").items(200)
 ```
 
-Essa massa de dados crua é armazenada no Mongodb e posteriormente devolvida para o jupter notebook para limpeza e modificação, continuando assim o processo de ETL.
+Essa massa de dados crua é armazenada no Mongodb e posteriormente devolvida para o Jupter Notebook para limpeza e modificação, continuando assim o processo de ETL.
 
 ```python
 # enviar a coleção de dados originais (raw) para o banco de dados
