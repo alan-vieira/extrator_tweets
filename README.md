@@ -14,9 +14,25 @@ Extrator de dados do twitter para criação de massa de dados, para futuro trein
 
 Após a conexão com a API do Twitter é enviada uma solicitação da lista dos tópicos mais citados (trending topics) da rede social. 
 
+
+```python
+# extração dos trends topics do Brasil
+brazil_trends = api.trends_place(BRAZIL_WOE_ID)
+```
+
 Depois de ser reduzida de 50 tópicos para 10, criando assim um top10, uma nova solicitação a API é realizada, mas dessa vez pedindo os tweets relacionados a cada tópico da lista, formando assim uma massa de 200 tweets por tópico.
 
+```python
+query_search = trends_top10_list[i] + ' -filter:retweets'
+cursor_tweets = tw.Cursor(api.search, q=query_search, lang="pt").items(200)
+```
+
 Essa massa de dados crua é armazenada no Mongodb e posteriormente devolvida para o jupter notebook para limpeza e modificação, continuando assim o processo de ETL.
+
+```python
+# enviar a coleção de dados originais (raw) para o banco de dados
+tweets_collection.insert_one(tweet._json)
+```
 
 As colunas que não são utilizadas são removidas e a coluna do texto sofre um tratamento de classificação e de rotulação, mas o resultado é salvo em uma nova coluna.
 
@@ -26,6 +42,9 @@ A coluna que foi gerada com a limpeza dos dados, utilizando técnicas como remo�
 
 Depois de tudo realizando o resultado final é armazenado em um arquivo .csv.
 
+```python
+tweets_df.to_csv('twitter_sentiments.csv')
+```
                                                                                                             
 ## Ferramentas utilizadas
 - `Jupyter Notebook`
