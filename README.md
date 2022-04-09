@@ -36,9 +36,13 @@ tweets_collection.insert_one(tweet._json)
 
 As colunas que não são utilizadas são removidas e a coluna do texto sofre um tratamento de classificação e de rotulação, mas o resultado é salvo em uma nova coluna.
 
+![Dataframe com a nova coluna de classificacao](./img/classificacao_com_leia.JPG)
+
 A classificação do sentimento do texto é realizada com auxílio da biblioteca de processamento de linguagem natural [Lea](https://github.com/rafjaa/LeIA) (desenvolvida pelo Rafael Almeida), que se trata de um fork da Vader (Valence Aware Dictionary and sEntiment Reasoner) adaptada para o português. A escolha dessa biblioteca foi feita por ter um tratamento especial com tweets, reconhecendo os sentimentos dos emojis.
 
 A coluna que foi gerada com a limpeza dos dados, utilizando técnicas como remoção de stopword e de caracteres indesejados, foi criada para utilização no futuro treinamento de modelos de machine learnig, já que a classificação feita pela técnica do Lea não necessita desse tratamento.
+
+![Dataframe com a nova coluna com texto limpo](./img/adicao_coluna_testo_limpo.JPG)
 
 Depois de tudo realizando o resultado final é armazenado em um arquivo .csv.
 
